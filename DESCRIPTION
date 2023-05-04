@@ -1,11 +1,36 @@
 Package: simpipe2docker
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Communicate simpipe with Docker image to avoid environment configuration and complete simulation procedure for scRNA-seq data
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Hongrui", "Duo", , "Duohongrui@cqnu.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8683-015X")),
+    person("Bo", "Li", , "libo@cqnu.edu.cn", role = "aut",
+           comment = c(ORCID = "0000-0001-9944-0003"))
+  )
+Author: Hongrui Duo [aut, cre] (<https://orcid.org/0000-0001-8683-015X>),
+    Bo Li [aut] (<https://orcid.org/0000-0001-9944-0003>)
+Maintainer: Hongrui Duo <duohongrui@cqnu.edu.cn>
+Description: simpipe2docker implements some functions for calling Docker in R
+    which can be used for estimating parameters from real data and then simulating
+    scRNA-seq data. It is a lightweight R package to download and use, instead of
+    configuring complicated programming environment after you have already installed
+    Docker and downloaded the simpipe docker image.
+URL: https://github.com/duohongrui/simpipe2docker
+BugReports: https://github.com/duohongrui/simpipe2docker/issues
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.2.1
+Roxygen: list(markdown = TRUE)
+Imports: 
+    magrittr,
+    stats,
+    purrr,
+    assertthat,
+    tidyr,
+    babelwhale,
+    dplyr,
+    crayon,
+    stringr,
+    processx
