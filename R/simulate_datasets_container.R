@@ -1,9 +1,6 @@
 #' Simulate scRNA-seq Datasets
 #'
-#' This is the core function of simulating scRNA-seq datasets. Users can execute
-#' this step without parameters estimation step as we will set some default parameters.
-#' Otherwise, we provide an alternative choice to complete this step via establishing
-#' Docker containers.
+#' This is the core function of simulating scRNA-seq datasets via establishing Docker containers.
 #'
 #' @param method A character or a string of methods or NULL. It can be \code{all}
 #' as all methods are used to estimate paramters from real data. If NULL, the
@@ -32,7 +29,7 @@
 #'
 #' @export
 #'
-simulate_datasets <- function(
+simulate_datasets_container <- function(
     method = NULL,
     parameters = NULL,
     ref_data = NULL,
@@ -147,7 +144,7 @@ simulate_datasets <- function(
     .x = seq_len(length(every_exec_method)),
     .f = function(id) {
       if(verbose){
-        cat(paste0("Simulating dataset ", id, "\n"))
+        message(paste0("Simulating dataset ", id))
       }
       # Users have performed the estimation step
       if(!is.null(parameters)){

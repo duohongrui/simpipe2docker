@@ -86,7 +86,7 @@ method_execute_container_simulate <- function(
   # Get result------------------------------------------------------------------
   if(verbose){
     cat("Output is saved to ", local_path, "\n")
-    cat("Attempting to read output into R\n")
+    cat("Attempting to read output into R\n\n")
   }
   ## return output
   readRDS(file = file.path(local_path, "output.rds"))

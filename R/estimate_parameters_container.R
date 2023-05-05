@@ -1,8 +1,7 @@
 #' Estimate parameters from Real Datasets
 #'
 #' This is the core function of estimating parameters from real single-cell RNA
-#' sequencing datasets. Users can get many estimation results by pointing out
-#' more than two methods and inputting many real datasets.
+#' sequencing datasets via establishing Docker containers.
 #'
 #' @param ref_data A matrix for one dataset or a list of datasets with their own
 #' names.
@@ -80,6 +79,9 @@ estimate_parameters_container <- function(
   result <- purrr::map(
     .x = seq_len(nrow(design)),
     .f = function(er) {
+      if(verbose){
+        message(paste0("Learning parameters from data ", er))
+      }
       seed <- ifelse(is.null(seed), random_seed(), seed)
       other_prior_exec <- check_prior_info(method = design$method_id[er],
                                            step = "estimation",

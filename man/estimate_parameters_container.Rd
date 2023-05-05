@@ -31,6 +31,5 @@ A list of estimated parameters and detection results
 }
 \description{
 This is the core function of estimating parameters from real single-cell RNA
-sequencing datasets. Users can get many estimation results by pointing out
-more than two methods and inputting many real datasets.
+sequencing datasets via establishing Docker containers.
 }

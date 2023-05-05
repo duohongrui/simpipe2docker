@@ -15,8 +15,5 @@ This code is written by Robrecht Cannoodt (https://github.com/rcannood)
 \examples{
 test_docker_installation()
 
-if (test_docker_installation()) {
-  test_docker_installation(detailed = TRUE)
-}
 
 }
