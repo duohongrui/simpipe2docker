@@ -16,13 +16,6 @@ Description: simpipe2docker implements some functions for calling Docker in R
     scRNA-seq data. It is a lightweight R package to download and use, instead of
     configuring complicated programming environment after you have already installed
     Docker and downloaded the simpipe docker image.
-URL: https://github.com/duohongrui/simpipe2docker
-BugReports: https://github.com/duohongrui/simpipe2docker/issues
-License: GPL (>= 3)
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.2.1
-Roxygen: list(markdown = TRUE)
 Imports: 
     magrittr,
     stats,
@@ -34,3 +27,10 @@ Imports:
     crayon,
     stringr,
     processx
+URL: https://github.com/duohongrui/simpipe2docker
+BugReports: https://github.com/duohongrui/simpipe2docker/issues
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Roxygen: list(markdown = TRUE)
