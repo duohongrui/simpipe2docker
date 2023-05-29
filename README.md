@@ -52,13 +52,13 @@ Terminal command:
 docker pull duohongrui/simpipe:latest
 ```
 
-Or you can run command in R:
+Or you can run the command in R:
 
 ``` r
 babelwhale::pull_container(container_id = "duohongrui/simpipe:latest")
 ```
 
-Now, you have already installed Docker Desktio successfully!
+Now, you have already installed Docker Desktop successfully!
 
 ## Usage
 
